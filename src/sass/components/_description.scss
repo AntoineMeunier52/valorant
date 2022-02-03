@@ -1,0 +1,48 @@
+.description-box {
+  background-color: var(--white);
+  width: 900px;
+  margin-top: 70px;
+
+  .title {
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+    font-family: "Montserrat";
+    width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .infos-picture {
+    display: flex;
+
+    img {
+      height: 200px;
+    }
+
+    .infos {
+      p {
+        margin-left: 20px;
+      }
+    }
+
+    .info-elements {
+      .info-element {
+        border: 1px solid black;
+        width: 10px;
+        height: 20px;
+      }
+
+      .info-element-red {
+        background-color: var(--red);
+        width: 10px;
+        height: 20px;
+      }
+    }
+  }
+}

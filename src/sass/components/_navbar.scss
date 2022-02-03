@@ -1,0 +1,65 @@
+.nav {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 0.7em;
+  background-color: var(--dark);
+  display: flex;
+  color: var(--white);
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__main {
+    display: flex;
+    align-items: center;
+
+    .riot-logo {
+      height: 30px;
+      margin-left: 30px;
+    }
+
+    .dash-white {
+      background-color: var(--white);
+      height: 30px;
+      width: 2px;
+      margin: 0 30px;
+    }
+
+    .valorant-log {
+      height: 30px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    li {
+      margin: 0 20px;
+    }
+
+    a {
+      color: var(--white);
+    }
+
+    .arrow-contain {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .arrow {
+    margin-left: 5px;
+    height: 7px;
+  }
+}

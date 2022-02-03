@@ -1,0 +1,15 @@
+:root {
+  --white: #ffffff;
+  --drk_white: #f8f8f8;
+  --dark: #1f2326;
+  --grey: #c4c4c4;
+  --red: #ff4656;
+}
+
+@font-face {
+  font-family: "druk wild";
+  src: url(./fonts/Druk\ Wide\ Bold.eot) format("embedded-opentype"),
+    url(./fonts/Druk\ Wide\ Bold.woff2) format("woff2"),
+    url(./fonts/Druk\ Wide\ Bold.woff) format("woff"),
+    url(./fonts/Druk\ Wide\ Bold.ttf) format("truetype");
+}

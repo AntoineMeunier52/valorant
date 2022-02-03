@@ -1,0 +1,202 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --white: #ffffff;
+  --drk_white: #f8f8f8;
+  --dark: #1f2326;
+  --grey: #c4c4c4;
+  --red: #ff4656;
+}
+
+@font-face {
+  font-family: "druk wild";
+  src: url(./fonts/Druk\ Wide\ Bold.eot) format("embedded-opentype"), url(./fonts/Druk\ Wide\ Bold.woff2) format("woff2"), url(./fonts/Druk\ Wide\ Bold.woff) format("woff"), url(./fonts/Druk\ Wide\ Bold.ttf) format("truetype");
+}
+body {
+  background-color: var(--red);
+  font-family: "druk wild";
+  background-image: url(./assets/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 0.7em;
+  background-color: var(--dark);
+  display: flex;
+  color: var(--white);
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__main {
+  display: flex;
+  align-items: center;
+}
+.nav__main .riot-logo {
+  height: 30px;
+  margin-left: 30px;
+}
+.nav__main .dash-white {
+  background-color: var(--white);
+  height: 30px;
+  width: 2px;
+  margin: 0 30px;
+}
+.nav__main .valorant-log {
+  height: 30px;
+}
+.nav__list {
+  display: flex;
+}
+.nav__list li {
+  margin: 0 20px;
+}
+.nav__list a {
+  color: var(--white);
+}
+.nav__list .arrow-contain {
+  display: flex;
+  align-items: center;
+}
+.nav__info {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.nav__info img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.nav .arrow {
+  margin-left: 5px;
+  height: 7px;
+}
+
+.description-box {
+  background-color: var(--white);
+  width: 900px;
+  margin-top: 70px;
+}
+.description-box .title {
+  margin-left: 100px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+.description-box .description {
+  font-size: 14px;
+  font-family: "Montserrat";
+  width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.description-box .infos-picture {
+  display: flex;
+}
+.description-box .infos-picture img {
+  height: 200px;
+}
+.description-box .infos-picture .infos p {
+  margin-left: 20px;
+}
+.description-box .infos-picture .info-elements .info-element {
+  border: 1px solid black;
+  width: 10px;
+  height: 20px;
+}
+.description-box .infos-picture .info-elements .info-element-red {
+  background-color: var(--red);
+  width: 10px;
+  height: 20px;
+}
+
+header {
+  max-width: 90vw;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
