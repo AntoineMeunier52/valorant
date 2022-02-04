@@ -1,7 +1,8 @@
 .description-box {
   background-color: var(--white);
   min-width: 900px;
-  margin-top: 70px;
+  margin: auto 0;
+  height: 757px;
 
   .title {
     margin-left: 50px;
@@ -59,6 +60,43 @@
         background-color: var(--red);
         width: 7px;
         height: 30px;
+      }
+    }
+  }
+
+  .competences {
+    margin-top: 20px;
+    background-color: var(--dark);
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+
+    .competence-dash {
+      margin: auto;
+      background-color: var(--red);
+      width: 1px;
+      height: 160px;
+    }
+
+    .competence {
+      flex: 1;
+      color: var(--white);
+
+      img {
+        margin: 10px auto;
+        height: 60px;
+      }
+
+      h3 {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      p {
+        margin: 0 5px;
+        text-align: center;
+        font-family: "Montserrat";
+        font-size: 12px;
       }
     }
   }

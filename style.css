@@ -159,7 +159,8 @@ a {
 .description-box {
   background-color: var(--white);
   min-width: 900px;
-  margin-top: 70px;
+  margin: auto 0;
+  height: 757px;
 }
 .description-box .title {
   margin-left: 50px;
@@ -211,6 +212,37 @@ a {
   background-color: var(--red);
   width: 7px;
   height: 30px;
+}
+.description-box .competences {
+  margin-top: 20px;
+  background-color: var(--dark);
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.description-box .competences .competence-dash {
+  margin: auto;
+  background-color: var(--red);
+  width: 1px;
+  height: 160px;
+}
+.description-box .competences .competence {
+  flex: 1;
+  color: var(--white);
+}
+.description-box .competences .competence img {
+  margin: 10px auto;
+  height: 60px;
+}
+.description-box .competences .competence h3 {
+  font-size: 18px;
+  text-align: center;
+}
+.description-box .competences .competence p {
+  margin: 0 5px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 12px;
 }
 
 header {
