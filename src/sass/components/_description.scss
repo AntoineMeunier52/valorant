@@ -1,10 +1,10 @@
 .description-box {
   background-color: var(--white);
-  width: 900px;
+  min-width: 900px;
   margin-top: 70px;
 
   .title {
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 30px;
     padding-top: 20px;
     font-size: 24px;
@@ -13,35 +13,52 @@
   .description {
     font-size: 14px;
     font-family: "Montserrat";
-    width: 700px;
+    width: 800px;
     margin: auto;
     margin-bottom: 20px;
   }
 
   .infos-picture {
     display: flex;
+    justify-content: space-between;
 
     img {
       height: 200px;
     }
 
     .infos {
-      p {
-        margin-left: 20px;
+      height: 200px;
+      ul {
+        padding: 0;
+        font-size: 14px;
+        color: var(--grey);
+
+        li {
+          padding: 6px 0;
+        }
+        .info {
+          color: var(--dark);
+        }
       }
     }
 
     .info-elements {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 90px;
+      height: 200px;
+
       .info-element {
         border: 1px solid black;
-        width: 10px;
-        height: 20px;
+        width: 7px;
+        height: 30px;
       }
 
       .info-element-red {
         background-color: var(--red);
-        width: 10px;
-        height: 20px;
+        width: 7px;
+        height: 30px;
       }
     }
   }
