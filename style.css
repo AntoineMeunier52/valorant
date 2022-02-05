@@ -85,12 +85,35 @@ select {
   src: url(./fonts/Druk\ Wide\ Bold.eot) format("embedded-opentype"), url(./fonts/Druk\ Wide\ Bold.woff2) format("woff2"), url(./fonts/Druk\ Wide\ Bold.woff) format("woff"), url(./fonts/Druk\ Wide\ Bold.ttf) format("truetype");
 }
 body {
-  background-color: var(--red);
   font-family: "druk wild";
+  position: relative;
+}
+
+.first-background {
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--red);
   background-image: url(./assets/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  z-index: -200;
+}
+
+.second-background {
+  top: 100px;
+  left: 5vw;
+  position: absolute;
+  width: 65vw;
+  aspect-ratio: 16/9;
+  background-image: url(./assets/elements.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
 }
 
 ul {
@@ -157,8 +180,11 @@ a {
 }
 
 .description-box {
+  flex: 3;
   background-color: var(--white);
+  width: 900px;
   min-width: 900px;
+  max-width: 900px;
   margin: auto 0;
   height: 757px;
 }
@@ -245,7 +271,27 @@ a {
   font-size: 12px;
 }
 
+.jett-contant {
+  flex: 3;
+  position: relative;
+}
+.jett-contant .jett-picture img {
+  position: absolute;
+}
+.jett-contant h1 {
+  position: absolute;
+  right: -270px;
+  top: 30vh;
+  font-size: 11em;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--white);
+  transform: rotate(90deg);
+  z-index: -10;
+}
+
 header {
+  height: calc(100vh - 70px);
   max-width: 90vw;
   margin: auto;
   display: flex;

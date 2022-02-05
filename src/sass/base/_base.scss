@@ -1,10 +1,33 @@
 body {
-  background-color: var(--red);
   font-family: "druk wild";
+  position: relative;
+}
+
+.first-background {
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--red);
   background-image: url(./assets/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  z-index: -200;
+}
+
+.second-background {
+  top: 100px;
+  left: 5vw;
+  position: absolute;
+  width: 65vw;
+  aspect-ratio: 16/9;
+  background-image: url(./assets/elements.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
 }
 
 ul {
